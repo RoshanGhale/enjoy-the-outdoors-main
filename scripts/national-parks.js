@@ -49,4 +49,5 @@ window.onload = function () {
   }
   parkList.onchange = buildTableRow;
   loadParks();
+  buildTableRow();
 };

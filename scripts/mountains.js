@@ -5,6 +5,7 @@ window.onload = function () {
   const mountainList = document.querySelector("#mountainList");
 
   function loadMountains() {
+    mountainTB.innerText = "";
     for (const mountain of mountainsArray) {
       buildTableRow(mountain);
     }
