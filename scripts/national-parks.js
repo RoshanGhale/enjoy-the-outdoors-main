@@ -1,8 +1,5 @@
 "use strict";
 window.onload = function () {
-  /*   const nationalParkTB = document.querySelector("#nationalParkTB");
-  const parkList = document.querySelector("#parkList");
- */
   const radioButtonForm = document.querySelector("#radioButtonForm");
   const locationOption = document.querySelector("#locationOption");
   const parkOption = document.querySelector("#parkOption");
@@ -51,9 +48,15 @@ window.onload = function () {
         let cell8 = row.insertCell();
         cell8.innerText = park.Fax;
 
+        let cell9 = row.insertCell();
+
         if (park.Visit) {
-          let cell9 = row.insertCell();
-          cell9.innerText = park.Visit;
+          console.log(park.Visit);
+          let link = document.createElement("a");
+          link.href = park.Visit;
+          link.textContent = "Visit Website";
+          link.target = "_blank";
+          cell9.appendChild(link);
         }
         let cell10 = row.insertCell();
         cell10.innerText = park.Latitude;
@@ -104,9 +107,14 @@ window.onload = function () {
         let cell8 = row.insertCell();
         cell8.innerText = park.Fax;
 
+        let cell9 = row.insertCell();
         if (park.Visit) {
-          let cell9 = row.insertCell();
-          cell9.innerText = park.Visit;
+          console.log(park.Visit);
+          let link = document.createElement("a");
+          link.href = park.Visit;
+          link.textContent = "Visit Website";
+          link.target = "_blank";
+          cell9.appendChild(link);
         }
         let cell10 = row.insertCell();
         cell10.innerText = park.Latitude;
