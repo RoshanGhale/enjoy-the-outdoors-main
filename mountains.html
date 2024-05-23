@@ -14,7 +14,10 @@
   </head>
   <body>
     <main>
-      <h1>Mountains</h1>
+      <div class="container">
+        <h1>Mountains</h1>
+      </div>
+
       <div class="container">
         <header
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
@@ -34,23 +37,38 @@
             </svg>
           </a>
 
-          <ul
-            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li>
-              <a href="index.html" class="nav-link px-2 link-secondary">Home</a>
-            </li>
-            <li>
-              <a href="mountains.html" class="nav-link px-2 link-dark"
-                >Mountains</a
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">Mountains & Parks</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-            </li>
-            <li>
-              <a href="national-parks.html" class="nav-link px-2 link-dark"
-                >National Parks</a
-              >
-            </li>
-          </ul>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mountains.html">Mountains</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="national-parks.html">Parks</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </header>
       </div>
       <div class="container mb-5">

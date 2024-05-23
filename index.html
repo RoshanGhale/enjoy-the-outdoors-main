@@ -12,42 +12,106 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-        >
-          <svg
-            class="bi me-2"
-            width="40"
-            height="32"
-            role="img"
-            aria-label="Bootstrap"
-          >
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
+    <style>
+      body {
+        padding-top: 56px; /* Adjusted for navbar height */
+      }
+      footer {
+        padding: 20px 0;
+        background-color: #f8f9fa;
+      }
+    </style>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li>
-            <a href="index.html" class="nav-link px-2 link-secondary">Home</a>
-          </li>
-          <li>
-            <a href="mountains.html" class="nav-link px-2 link-dark"
-              >Mountains</a
-            >
-          </li>
-          <li>
-            <a href="national-parks.html" class="nav-link px-2 link-dark"
-              >National Parks</a
-            >
-          </li>
-        </ul>
-      </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mountains & Parks</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mountains.html">Mountains</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="national-parks.html">Parks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to Mountains & Parks</h1>
+
+        <img
+          src="images/denali-national-park-1733313_1280.jpg"
+          alt="rocky"
+          width="900"
+        />
+        <p class="lead">
+          Mountains, with their towering peaks and rugged terrain, stand as
+          majestic symbols of nature's grandeur. These magnificent landforms,
+          often shrouded in mist or capped with snow, evoke a sense of awe and
+          wonder in all who behold them. Serving as both barriers and gateways,
+          mountains shape landscapes and influence weather patterns, while also
+          providing habitats for diverse flora and fauna. They challenge
+          adventurers with their steep slopes and treacherous paths, yet reward
+          those who dare to climb with breathtaking vistas from their summits.
+          Mountains inspire us with their timeless beauty and remind us of the
+          power and resilience of the natural world.
+        </p>
+        <div class="container">
+          <a class="btn btn-primary btn-lg mr-3" href="mountains.html"
+            >Explore Mountains</a
+          >
+        </div>
+        <div class="container">
+          <img
+            src="images/58-National-Parks-1600px.jpg"
+            alt="58p"
+            width="900"
+          />
+        </div>
+
+        <p class="park">
+          National parks, cherished treasures of conservation and natural
+          beauty, offer sanctuary to some of the world's most stunning
+          landscapes and ecosystems. These protected areas serve as havens for
+          biodiversity, preserving diverse habitats and rare species for future
+          generations to appreciate and study. From lush forests teeming with
+          wildlife to vast deserts adorned with towering rock formations,
+          national parks captivate visitors with their awe-inspiring scenery and
+          rich cultural heritage. They provide opportunities for recreation,
+          education, and spiritual renewal, inviting people of all ages to
+          explore and connect with the wonders of the natural world. As
+          sanctuaries of serenity and sources of inspiration, national parks
+          remind us of the importance of stewardship and the need to safeguard
+          our planet's precious resources for the benefit of all.
+        </p>
+        <a class="btn btn-success btn-lg" href="national-parks.html"
+          >Discover Parks</a
+        >
+      </div>
     </div>
+
+    <footer class="text-center">
+      <p>&copy; 2024 Mountains & Parks</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

@@ -33,6 +33,12 @@ window.onload = function () {
 
       let cell4 = row.insertCell();
       cell4.innerText = mountain.desc;
+
+      let img = document.createElement("img");
+      img.src = mountain.img;
+      img.alt = mountain.name;
+      img.width = 200;
+      cell4.appendChild(img);
     }
   }
 
